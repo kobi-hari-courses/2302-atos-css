@@ -1,0 +1,60 @@
+
+/* 0, 2, 0 */ 
+.a.b {
+    color: red;
+}
+
+
+/* 0, 1, 0 */
+.a {
+    color: green;
+}
+
+/* 0, 0, 1 */
+li  {
+    color: magenta;
+}
+
+/* 0, 1, 1 */
+li.a {
+    color: yellow;
+}
+
+/* 0, 2, 1 */
+li.a.c {
+    color: darkcyan;
+}
+
+/* 0, 2, 1 */
+li.a.b {
+    color: brown;
+}
+
+/* 0, 0, 2 */
+ul li {
+    color: deepskyblue;
+}
+
+/* 0, 0, 0 */
+* {
+
+}
+
+/* 0, 4, 2 */
+ul li:hover.a.b.c {
+    color: white;
+}
+
+ul li:first-child {
+
+}
+
+li:first-child#bla {
+}
+
+
+
+/* 1, 0, 0 */
+#bla {
+    color: gray;
+}

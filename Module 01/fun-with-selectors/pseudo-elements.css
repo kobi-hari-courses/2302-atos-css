@@ -1,0 +1,60 @@
+p:first-child::selection {
+    background-color: yellow;
+    color: green;
+}
+
+li::marker {
+    content: '-';
+    color: red;
+}
+
+.special {
+    color: red;
+    background: pink;
+    position: relative;
+}
+
+.special::before, .special::after {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    top: -10px;
+    opacity: 0.5;
+}
+
+.special::after {
+    content: ']';
+    right: -8px;
+}
+
+.special::before {
+    content: '[';
+    left: -8px;
+}
+
+[explain] {
+    position: relative;
+    background: rgba(255, 255, 0, 0.109);
+}
+
+[explain]:hover::before {
+    position: absolute;
+    background: yellow;
+    content: attr(explain);
+    top: -10px;
+    left: -10px;
+}
+
+a[href$=".pdf"]::after {
+    content: ' ';
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+}
+

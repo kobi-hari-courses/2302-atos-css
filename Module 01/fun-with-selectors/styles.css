@@ -1,0 +1,21 @@
+h1 {
+    color: magenta;
+    margin: 4px 0px;
+}
+
+h2 {
+    color: tomato;
+}
+
+.ugly {
+    border: 1px solid magenta;
+}
+
+#id154 {
+    background-color: yellow;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}

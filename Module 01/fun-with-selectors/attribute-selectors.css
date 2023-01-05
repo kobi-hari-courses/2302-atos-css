@@ -1,0 +1,39 @@
+[bla] {
+    border: 1px solid red;
+}
+
+[type="text"] {
+    background: pink;
+}
+
+[hint*="please"] {
+    background: yellow;
+}
+
+[hint^="please"] {
+    border-left: 10px solid lime;
+}
+
+[hint$="please"] {
+    border-right: 10px solid lime;
+}
+
+[conditions~="required"]::before {
+    content: '*';
+    color: red;
+}
+
+[currency] {
+    background-color: rgba(0, 0, 255, 0.045);
+    color: darkblue
+}
+
+[currency="nis"]::after {
+    content: '₪';
+    color: blue
+}
+
+[currency="usd"]::after {
+    content: '$';
+    color: blue
+}

@@ -13,10 +13,27 @@ Kobi Hari
    * Specifity
    * [Exercises](Module%2001/exercises/README.md)
 
-2. Box Model, Sizing
+2. [Box Model, Sizing]
    * Box model parts
    * Sizing Units
    * Displays
    * Fun with Borders
    * Margin Collapsing
    * Box Sizing methods
+
+3. [Flex boxes]
+   * The flex box axes
+   * The flex Container 
+   * Wrapping elements
+   * Sizing - Grow, Shrink and Basis
+   * Alignment
+   * The `order` property
+
+4. [Grid]
+   * Introduction to grid layout
+   * Grid container templates
+   * Line based placement
+   * Placement with line names
+   * Placement with grid template areas
+   * Grid auto placement and generation
+   * Alignment

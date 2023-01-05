@@ -1,0 +1,76 @@
+li {
+    transition: 1s;
+    transform-origin: center;
+    transform: scale(1);
+}
+
+li:hover {
+    background: yellow;
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:active {
+    font-style: italic;
+}
+
+a:visited {
+    color: green;
+}
+
+input {
+    margin: 4px;
+    color: blue;
+    border: 0px transparent;
+    outline: 0px transparent;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+input:focus {
+    border-bottom: 1px solid blue;
+}
+
+input:disabled {
+    background: transparent;
+    border-bottom: 1px dotted rgb(187, 187, 187);
+}
+
+.hint {
+    display: none;
+}
+
+input:focus + .hint {
+    display: inline;
+}
+
+
+
+li:nth-child(n+3) {
+    background: yellow;
+}
+
+.nth-of-type-demo h2:nth-of-type(-n + 2) {
+    background: pink;
+
+}
+
+.nth-of-type-demo :not(.b) {
+    border-right: 4px solid green;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid gray;
+}
+
+table tr:nth-child(2n) {
+    background-color: lightgray;
+}
+

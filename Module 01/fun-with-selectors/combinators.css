@@ -1,0 +1,32 @@
+.shopping-list {
+    background-color: lightblue;
+}
+
+.shopping-list li {
+    text-decoration: red underline;
+}
+
+.outer-ul > li {
+    border: 1px solid brown;
+}
+
+.a.b {
+    color: lightgreen;
+}
+
+.inner-ul > li.a.b {
+    font-size: 40px;
+}
+
+.c ~ li {
+    border-left: 3px solid magenta;
+
+}
+
+.d + li {
+    border-right: 5px solid green;
+}
+
+label[condition="uppercase"] + input.error {
+    background-color: pink;
+}

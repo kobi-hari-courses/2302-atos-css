@@ -1,5 +1,11 @@
 # Module 1 - Selectors
 
+## Projects
+|     |     |
+| --- | --- |
+| [fun-with-selectos](./projects/fun-with-selectors/) | CSS Selectors in Depth | 
+
+
 ## Introduction to selectors
 * What is a selector?
 * What the selector **selects**?

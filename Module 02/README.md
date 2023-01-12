@@ -1,5 +1,6 @@
 # Module 2 - The Box Model
 ## Box Model
+[<img src="./assets/Box Model.png" width="300">]
 * Content Width and Height
 * Padding
 * Border

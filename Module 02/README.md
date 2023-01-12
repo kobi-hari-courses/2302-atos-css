@@ -10,7 +10,7 @@
 * px
 * %
 * em and ex
-* vw, vh, vm
+* vw, vh, vmin and vmax
 * cm and mm
 
 ## Displays

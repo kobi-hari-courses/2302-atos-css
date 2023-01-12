@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    background: pink;
+    height: 50px;
+    width: 200px;
+    margin: 40px;
+}

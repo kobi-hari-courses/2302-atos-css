@@ -5,7 +5,6 @@
 * Padding
 * Border
 * Margin
-* Margin auto
 
 ## Sizing Units
 * px

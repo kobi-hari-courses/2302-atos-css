@@ -13,13 +13,14 @@ Kobi Hari
    * Specifity
    * [Exercises](Module%2001/exercises/README.md)
 
-2. [Box Model, Sizing]
+2. [Box Model, Sizing](Module%2002/README.md)
    * Box model parts
    * Sizing Units
    * Displays
    * Fun with Borders
    * Margin Collapsing
    * Box Sizing methods
+   * [Exercises](Module%2002/exercises/README.md)
 
 3. [Flex boxes]
    * The flex box axes

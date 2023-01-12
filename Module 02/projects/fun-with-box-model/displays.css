@@ -1,0 +1,43 @@
+.box-container {
+    border: 2px solid brown;
+    background-color: rgba(165, 42, 42, 0.1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-container .box {
+
+    background-color: rgba(0, 0, 255, 0.485);
+    margin: 4px;
+    display: inline-block;  
+    width: 100px;
+    height: 100px;
+    
+    overflow: hidden;
+    border-image: linear-gradient(45deg, blue, white, green) 33%;
+    outline: 1px solid black;
+    border-width: 10px;
+    border-style: solid;
+    overflow: hidden;
+
+}
+
+
+img {
+    height: 50px;
+}
+
+a {
+    background-color: yellow;
+}
+
+#only-text {
+    background-color: pink;
+}
+
+#only-text span{
+    background-color: yellow;
+    display: inline;
+    width: 50px;
+}

@@ -39,3 +39,4 @@ Kobi Hari
    * Placement with grid template areas
    * Grid auto placement and generation
    * Alignment
+   * [Exercises](Module%2004/exercises/README.md)

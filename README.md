@@ -22,15 +22,16 @@ Kobi Hari
    * Box Sizing methods
    * [Exercises](Module%2002/exercises/README.md)
 
-3. [Flex boxes]
+3. [Flex boxes](Module%2003/README.md)
    * The flex box axes
    * The flex Container 
    * Wrapping elements
    * Sizing - Grow, Shrink and Basis
    * Alignment
    * The `order` property
+   * [Exercises](Module%2003/exercises/README.md)
 
-4. [Grid]
+4. [Grid](Module%2004/README.md)
    * Introduction to grid layout
    * Grid container templates
    * Line based placement

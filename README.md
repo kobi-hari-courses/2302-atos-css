@@ -40,3 +40,12 @@ Kobi Hari
    * Grid auto placement and generation
    * Alignment
    * [Exercises](Module%2004/exercises/README.md)
+
+5. [Sizes and Position](Module%2005/README.md)
+   * Media Queries
+   * Sizing functions
+   * Sizing constants
+   * Automatic row creation
+   * Introduction to Positioning
+   * Sticky position
+   * [Exercises](Module%2005/exercises/README.md)

@@ -49,3 +49,13 @@ Kobi Hari
    * Introduction to Positioning
    * Sticky position
    * [Exercises](Module%2005/exercises/README.md)
+
+6. [Variables and tricks](/Module%2006/README.md)
+   * Object fit for images
+   * Introduction to CSS Variables
+   * The `@property` rule
+   * The `calc` function
+   * The `calc` function with custom properties
+   * Cool tricks with `::before` and `::after`
+   * Gradients in CSS
+   * [Exercises](Module%2006/exercises/README.md)

@@ -8,7 +8,7 @@
   * The `none` value
 * The `object-position` property
 
-## CSS Variables 
+## CSS Custom Properties 
  * Understanding Custom properties
  * Naming custom properties
  * The `var` function
@@ -95,6 +95,13 @@
 * You can attach property values using the `attr([name])` function - only as text, and only in the content property
 * You can use the `counter-reset`, `counter-increment` and `counter` properties to add counters
 
+## Gradient Backgrounds
+* The `background-image` property
+* Using `linear-gradient` to create an "image" on the fly
+* Other gradient functions
+* Defining gradient stops
+* Setting the background size and position
+* The `background-clip` property (Surprise!!!)
 
 
 
@@ -103,3 +110,4 @@
 * [Complete guide to `calc` in CSS](https://css-tricks.com/a-complete-guide-to-calc-in-css/)
 * [Using @property in CSS](https://css-tricks.com/using-property-for-css-custom-properties/)
 * [Animating @property](https://css-tricks.com/exploring-property-and-its-animating-powers/)
+* [A Complete Guide to Gradients](https://css-tricks.com/a-complete-guide-to-css-gradients/)

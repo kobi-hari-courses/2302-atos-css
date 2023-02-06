@@ -59,3 +59,21 @@ Kobi Hari
    * Cool tricks with `::before` and `::after`
    * Gradients in CSS
    * [Exercises](Module%2006/exercises/README.md)
+
+7. [Transitions and Animations](Module%2007/README.md)
+   * The `transform` property
+     * The possible transforms: `scale`, `translate`, `rotate` and `skew`
+     * Combining the transformations
+     * Setting transform origin
+   * The `transition` property
+     * Setting global transition time
+     * Setting easing function
+     * Setting transition per property
+     * Setting delay for transition
+   * The `@keyframe` rule
+     * Creating animation frames
+     * Setting `from` and `to`
+   * The `animation` property
+     * Setting the animation name and delay
+     * Setting iteration count
+     * Setting fill mode

@@ -104,7 +104,6 @@
 * The `background-clip` property (Surprise!!!)
 
 
-
 ## Extra Links
 * [Complete guide to CSS custom properties](https://css-tricks.com/a-complete-guide-to-custom-properties/)
 * [Complete guide to `calc` in CSS](https://css-tricks.com/a-complete-guide-to-calc-in-css/)

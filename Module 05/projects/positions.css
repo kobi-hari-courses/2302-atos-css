@@ -1,0 +1,118 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+:root {
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    background-color: lightpink;
+    padding: 10px;
+    font-size: 2em;
+    position: relative;
+}
+
+.text strong:hover {
+}
+
+.text span.float {
+    border: 1px solid red;
+    background-color: darkmagenta;
+    color: white;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+
+    background: rgba(0, 156, 0, 0.137);
+    margin: 10px;
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+.item {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    font-size: 4rem;
+    background: white;
+}
+
+.item:nth-child(2) {
+    background: pink;
+}
+
+
+.item:nth-child(4) {
+    background: rgba(255, 255, 0);
+    grid-column-start: 2;
+    grid-column-end: -2;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    bottom: 5px;
+    top: 5px;
+    left: 0px;
+    right: 0px;
+    z-index: 15;
+    position: static;
+
+}
+
+
+.box {
+    display: inline-block;
+    background: blue;
+    position: absolute;
+    top: calc(100% + 10px);
+    height: auto;
+    width: auto;
+    opacity: 0;
+    left: 10px;
+    transition: 0.5s;
+}
+
+*:hover > .box {
+    opacity: 0.8;
+}
+
+
+
+[remez] {
+    border-bottom: 2px dashed red;
+    position: relative;
+}
+
+[remez]::before {
+    content: attr(remez);
+    position: absolute;
+    background: yellow;
+    border: 1px solid black;
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 4px;
+    opacity: 0;
+    bottom: calc(100% + 5px);
+    transition: 1s;
+}
+
+[remez]:hover::before {
+    opacity: 0.9;
+}

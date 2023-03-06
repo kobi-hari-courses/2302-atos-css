@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+head,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+div:nth-child(1) {
+  background-image: linear-gradient(yellow, red);
+}
+
+div:nth-child(2) {
+  background-image: linear-gradient(to top right, green, lime);
+}
+
+div:nth-child(3) {
+  background-image: linear-gradient(90deg, blue, lightblue, purple, magenta);
+}
+
+div:nth-child(4) {
+  background-image: linear-gradient(
+    hsl(240, 100%, 50%) 0%,
+    hsl(240, 100%, 30%) 50%,
+    hsl(240, 100%, 70%) 50%,
+    hsl(240, 100%, 50%) 100%
+  );
+}
+
+div:nth-child(5) {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(to top, rgba(255, 0, 0, 0.2), rgba(0, 0, 0, 0));
+
+  background-size: 10px 100%, 100% 10px;
+  background-repeat: repeat-x, repeat-y;
+}
+
+div:nth-child(6) {
+  background-image: linear-gradient(
+      45deg,
+      #333 25%,
+      transparent 25%,
+      transparent 75%,
+      #333 75%,
+      #333
+    ),
+    linear-gradient(
+      -45deg,
+      #333 25%,
+      transparent 25%,
+      transparent 75%,
+      #333 75%,
+      #333
+    );
+  background-size: 20px 20px;
+}
+
+
+div:nth-child(7) {
+    background-color: red;
+    background-image: 
+        radial-gradient(circle at 0% 100%, lime, transparent), 
+        radial-gradient(circle at 100% 0%, yellow, transparent)
+}
+
+@property --angle {
+    syntax: '<percentage>';
+    inherits: true;
+    initial-value: 40%;
+}
+
+div:nth-child(8) {
+    --angle: 40%;
+    background-image: conic-gradient(white, white var(--angle), black 0 100%);
+    transition: 2s;
+}
+
+div:nth-child(8):hover {
+    --angle: 80%;
+}
+
+div:nth-child(9) {
+    background-color: #ff8a00;
+  background-image: repeating-radial-gradient(
+    circle at 0 0,
+    #ff8a00,
+    #ff8a00 10px,
+    #e52e71 10px,
+    #e52e71 20px /* determines size */
+  );
+}

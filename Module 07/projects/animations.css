@@ -1,0 +1,160 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 300px;
+  height: 100px;
+  background-color: salmon;
+  margin: 10px;
+  padding: 10px;
+}
+
+.item:nth-child(1) {
+    animation: swing-bottom-right-bck 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes swing-bottom-right-bck {
+  0% {
+    transform: rotate3d(-1, 1, 0, 0deg);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: rotate3d(-1, 1, 0, -180deg);
+    transform-origin: 100% 100%;
+  }
+}
+
+.item:nth-child(2) {
+  --fancy-color: purple;
+  --fancy-thickness: 10px;
+}
+
+.item:nth-child(3) {
+  background: yellow;
+  border: 1px solid black;
+  transform-origin: 50% 50%;
+  transform: translate(0px, 0px);
+  transition: background-color 1s cubic-bezier(0.8, 0.07, 0.27, 0.96) 2s,
+    transform 1s linear;
+}
+
+.item:nth-child(3):hover {
+  background-color: black;
+  transform: translateY(-300px);
+}
+
+.item:nth-child(4) {
+  background-color: lime;
+  border: 1px solid black;
+  transform: translateX(-50px);
+  animation-name: kobi;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.8, 0.07, 0.27, 0.96);
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+
+.item:nth-child(4):hover {
+  animation-play-state: running;
+}
+
+@keyframes kobi {
+  from {
+    transform: translateX(0px);
+  }
+
+  20% {
+    transform: translateX(100px);
+  }
+
+  40% {
+    transform: translateX(100px) translateY(100px);
+  }
+
+  to {
+    transform: translateX(100px) translateY(100px) rotate(90deg);
+  }
+}
+
+:root {
+  --fancy-color: black;
+  --fancy-thickness: 3px;
+}
+
+.fancy-borders {
+  border: 1px solid var(--fancy-color);
+  border-radius: 6px;
+  position: relative;
+}
+
+.fancy-borders::before,
+.fancy-borders::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border: solid var(--fancy-color);
+
+  --p-offset: calc(var(--fancy-thickness) / -2);
+}
+
+.fancy-borders::before {
+  top: var(--p-offset);
+  left: var(--p-offset);
+  border-radius: 6px 0 0 0;
+  border-width: var(--fancy-thickness) 0px 0px var(--fancy-thickness);
+}
+
+.fancy-borders::after {
+  bottom: var(--p-offset);
+  right: var(--p-offset);
+  border-radius: 0 0 6px 0;
+  border-width: 0px var(--fancy-thickness) var(--fancy-thickness) 0px;
+}
+
+.fancy-shadow {
+  position: relative;
+}
+
+.fancy-shadow::before,
+.fancy-shadow::after {
+  content: "";
+  position: absolute;
+  background: #777;
+  width: 40%;
+  box-shadow: 0 15px 10px #777;
+  z-index: -1;
+  top: 80%;
+}
+
+.fancy-shadow::before {
+  left: 10px;
+  bottom: 15px;
+  transform: rotate(-3deg);
+}
+
+.fancy-shadow::after {
+  right: 10px;
+  bottom: 15px;
+  transform: rotate(3deg);
+}
